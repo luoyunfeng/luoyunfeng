@@ -24,4 +24,10 @@ public class GuessNumberTest {
         String result = guessNumber.validate("1256");
         assertEquals("2a0b", result);
     }
+    @Test
+    public void should_return_2a0b_given_two_numbers_are_correct1(){
+        GuessNumber guessNumber = new GuessNumber("1234");
+        String result = guessNumber.validate("1256");
+        assertEquals("2a0b", result);
+    }
 }
